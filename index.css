@@ -1,0 +1,66 @@
+body {
+    background-image: url(city-back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 25%;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Besley', serif;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+nav.navbar.navbar-expand-lg {
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+.nav-link, button.navbar-toggler > span, .video-editor {
+    color: rgba(255,255,255,.63);
+    font-weight: 300;
+    font-size: 18px;
+    margin: 2%;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+div.collapse.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar > div.container-fluid {
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    text-align: center;
+}
+
+h1.name-title {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 450px) {
+    h1.name-title {
+      font-size: 3rem;
+    }
+
+    main {
+        margin-top: 40%;
+    }
+  }
+
+.navbar-nav {
+    align-items: center;
+}
+
+div.description {
+    padding: 5%;
+}
