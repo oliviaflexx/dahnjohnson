@@ -22,7 +22,7 @@ nav.navbar.navbar-expand-lg {
     margin: 2%;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-item.active > .nav-link {
     color: white;
 }
 
@@ -38,23 +38,22 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
 }
 
 h1.name-title {
-    font-size: 5rem;
-    font-weight: 900;
+    font-size: 7rem;
+    /* font-weight: 900; */
+    font-family: 'Bebas Neue', cursive;
+    /* margin-bottom: 5%; */
 }
 
 @media screen and (max-width: 450px) {
     h1.name-title {
-      font-size: 3rem;
+      font-size: 5rem;
     }
 
-    main {
-        margin-top: 40%;
-    }
   }
 
 .navbar-nav {
@@ -63,4 +62,71 @@ h1.name-title {
 
 div.description {
     padding: 5%;
+    font-size: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+hr {
+    color: white;
+    opacity: 1;
+    width: 20%;
+    height: 2px;
+    max-width: 100px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    z-index: 5;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+.social-ico {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.social-ico svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    opacity: 1;
+    fill: white;
+}
+
+.social-ico svg:hover {
+    fill: #ffffff73;
+}
+
+#mail-icon {
+    width: 60px;
+}
+
+footer {
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 650px) {
+    div.video-container > iframe {
+      width: 336px;
+      height: 189px;
+    }
+
+    div.video-container {
+        margin-bottom: 10%;
+    }
+}
+
+div.video-container {
+    margin-bottom: 5%;
+}
+
+section.videos {
+    margin-top: 5%;
 }
